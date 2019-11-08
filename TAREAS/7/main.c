@@ -13,7 +13,7 @@ int main(int argc, char *argu[]) {
 	for (int i = 0; i < b; i++)
 	{
 		//decimos en donde se va a guardar y que se va a multiplicar
-		c=c*a
+		c=c*a;
 	}
 	//imprimimos el resultado
 	printf("%.2d\n",c );
