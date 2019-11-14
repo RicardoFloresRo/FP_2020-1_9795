@@ -5,17 +5,20 @@
 int main(int argc,char *argv[]){
     //la x es lo que queremos sacar
     //el valor a convertir es y
-    double x= atof(argv[1]);
-    double y= atof(argv[2]);
-    if(x!=0){ 
+   double x, y, z ;
+   x=atof(argv[1]);
+   y=atof(argv[2]);
+    if(x==1){ 
     //este pasa de fahrenhait a celsius
-        double p= (y-32)/1.8;
-        printf("% .2lf",p);
+       z=(y-32)/1.8;
+       printf("%.2f\n",z );
+       return 0;
     }
-    else{
+    else if(x==0){
     //este  de celsius a fahrenhait
-        double f= (y*1.8)+32;
-        printf("% .2lf",f);
+        z=32+(y*1.8);
+        printf("%.2f\n",z );
+        return 0;
     }
     return 0;
 }  
