@@ -6,13 +6,13 @@ int main(int argc, char const *argv[])
 	int numeros[argc-1];
 	int i=0, j=1, numero;
 	while(i<argc-1){
-
+		//Este es para la nueva lista
 		numero=atoi(argv[j]);
 		numeros[i]=numero;
 		i++;
 		j++;
 	}
-
+//Esta variable es para que no se pierda nada, ningún dato
 	int temporal;
 	for (i = 1; i < argc;i++)
 	{
@@ -20,15 +20,16 @@ int main(int argc, char const *argv[])
 		{
 			if (numeros[j]>numeros[j+1])
 			{
+				//Se guarda en el temporal
 				temporal=numeros[j];
-
+				//Se hace retroceder el numero siguiente
 				numeros[j]=numeros[j+1];
 
 				numeros[j+1]=temporal;
 			}
 		}
 	}
-
+//usamos este for para imprimir
 	for (int i = 0; i < argc-1; i++)
 	{
 		printf("%i\n",numeros[i]);
